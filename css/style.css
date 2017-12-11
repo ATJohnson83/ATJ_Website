@@ -1,0 +1,119 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+nav {
+  height: 81px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #212121;
+  height: 81px;
+}
+
+nav .brand-logo{
+  font-family:  Arial Black;
+}
+
+.theT{
+  font-size: 125%;
+  margin-right: 15px;
+}
+.theAJ{
+  font-size: 125%;
+}
+
+#ajquote{
+  font-family: Arial;
+  font-size: 18px;
+  font-style: italic;
+  color: #212121;
+}
+
+.picnav{
+  margin-top: 175px;
+}
+
+.picnavlink{
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+  padding:15px;
+  display: inline-block;
+}
+
+.picnav a:hover{
+  /*color:#66B2FF;*/
+  background-color: rgba(150,150,150,.8);
+  border-radius: 5px;
+  font-size: 145%;
+}
+
+p {
+  line-height: 2rem;
+}
+
+
+#navimg{
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 3px;
+  width: 75px;
+  border-radius: 5px;
+}
+
+.nav-wrapper{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.catdesc{
+  font-style: italic;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: 500px;
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/*------Media Queries-------*/
+ s
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
