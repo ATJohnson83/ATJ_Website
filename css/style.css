@@ -15,16 +15,131 @@ nav .brand-logo {
   height: 81px;
 }
 
+nav ul a{
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 15px;
+  font-family:  Arial Black;
+}
+
 nav .brand-logo{
   font-family:  Arial Black;
+}
+
+div:focus {
+  outline: 0;
+}
+
+#topsect {
+  height: 100vh; 
+  background-color: #000;
+}
+
+.textfly1, .textfly2{
+  color: white;
+  position: absolute;
+  list-style: none;
+}
+
+.mainAJ{
+  font-size: 7em;
+}
+
+#mainA, #mainT, #mainJ{
+  font-size: 4em;
+}
+.textfly {
+  transition: all 2.0s ease;
+}
+
+.textfly1 li{
+    display: inline-block;
+    margin-right: 40px;
+    font-family: Open Sans, Arial;
+    font-weight: 300;
+    font-size: 3em;
+    opacity: 1;
+    transition: all 2.0s ease;
+}
+
+.textfly1 li:last-child{
+  margin-right: 0px;
+}
+
+.textfly2 li{
+    margin-right: 50px;
+    font-family: Open Sans, Arial;
+    font-weight: 200;
+    font-size: 2em;
+    letter-spacing: 15px;
+    opacity: 1;
+    transition: all 2.0s ease;
+}
+
+.textfly2 li:last-child{
+  margin-top: 50px;
+}
+
+.textfly1{
+  left: 50%;
+  top:40%;
+  transform: translateX(-50%) translateY(-40%);
+  width: 100%;
+}
+
+.textfly2{
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%) translateY(-70%);
+  width: 100%;
+}
+
+.textfly1.hidden li:nth-child(1){transform: translateX(-200px) translateY(-200px);}
+.textfly1.hidden li:nth-child(2){transform: translateX(200px) translateY(-20px);}
+.textfly1.hidden li:nth-child(3){transform: translateX(-40px) translateY(100px);}
+.textfly1.hidden li:nth-child(4){transform: translateX(-160px) translateY(50px);}
+.textfly1.hidden li:nth-child(5){transform: translateX(160px) translateY(70px);}
+.textfly1.hidden li:nth-child(6){transform: translateX(-180px) translateY(90px);}
+.textfly1.hidden li:nth-child(7){transform: translateX(-200px) translateY(-100px);}
+.textfly1.hidden li:nth-child(8){transform: translateX(-130px) translateY(130px);}
+.textfly1.hidden li:nth-child(9){transform: translateX(200px) translateY(-20px);}
+.textfly1.hidden li:nth-child(10){transform: translateX(-90px) translateY(-140px);}
+.textfly1.hidden li:nth-child(11){transform: translateX(160px) translateY(-20px);}
+.textfly1.hidden li:nth-child(12){transform: translateX(130px) translateY(-90px);}
+.textfly1.hidden li:nth-child(13){transform: translateX(170px) translateY(-75px);}
+.textfly1.hidden li:nth-child(14){transform: translateX(200px) translateY(-90px);}
+.textfly1.hidden li:nth-child(15){transform: translateX(-156px) translateY(50px);}
+.textfly1.hidden li:nth-child(16){transform: translateX(-180px) translateY(130px);}
+
+.textfly2.hidden li:nth-child(1){transform: translateX(-200px) translateY(-200px);}
+.textfly2.hidden li:nth-child(2){transform: translateX(200px) translateY(200px);}
+
+.hidden {
+  opacity: 0;
+}
+
+#navhead{
+  background-color: rgba(255,255,255,.9);
+}
+
+.section{
+  padding-top: 0px;
 }
 
 .theT{
   font-size: 125%;
   margin-right: 15px;
+  text-shadow: 2px 2px grey;
 }
+
 .theAJ{
   font-size: 125%;
+  text-shadow: 2px 2px grey;
+}
+
+.brand-logo{
+  text-shadow: 1px 1px black;
 }
 
 #ajquote{
@@ -53,8 +168,9 @@ nav .brand-logo{
   font-size: 145%;
 }
 
-p {
-  line-height: 2rem;
+
+#ajjacket{
+  height: 10%;
 }
 
 
@@ -63,7 +179,7 @@ p {
   margin-right: 30px;
   margin-top: 3px;
   width: 75px;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .nav-wrapper{
@@ -75,6 +191,7 @@ p {
   font-style: italic;
 }
 
+
 .button-collapse {
   color: #26a69a;
 }
@@ -84,6 +201,11 @@ p {
   line-height: 0;
   height: 500px;
 }
+
+#one {
+  height: 500px;
+}
+
 .parallax-container .section {
   width: 100%;
 }
@@ -98,6 +220,57 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.bounce{
+  max-height: 25px;
+} 
+
+.about {
+  font-size: 19px;
+  line-height: 35px;
+}
+#porthead {
+  margin-bottom: 5px;
+}
+
+.portimg img{
+  height:250px;
+  width:100%;
+  border-radius: 10%;
+}
+
+.demolinks{
+  margin: 10px;
+  padding: 5px;
+}
+
+.demolinks:hover{
+  box-shadow: 2px 2px 2px 2px rgba(155,155,155,.5);
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.underline-text {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.grybck{
+  background-color: lightgrey;
+  padding: 5px;
+}
+
+.modal {
+  max-height: 100%;
+}
+
+.contactimg {
+  width: 100px;
+  height: 100px;
+}
+
 
 /*------Media Queries-------*/
  s

@@ -7,33 +7,59 @@
   <meta name="author" content="Austin T. Johnson">
   <meta name="description" content="Website for Pianist/Keyboardist, Music Educator, and Full-Stack Webdevloper Austin T. Johnson">
   <meta name="keywords" content="HTML, CSS, JavaScript, ES6, JQuery, Node.js, MySQL, MongoDB, React, Jazz Piano, Jazz Organ, New Orleans Musician, Music Education">
-
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
           
 </head>
 <body>
-  <div id="zero" class="navbar">
-    <nav class="grey lighten-4" id="navhead" role="navigation">
-      <div class="nav-wrapper">
-        <img id="navimg" src="images/ATJ_Head.jpg">
-        <a id="logo-container" href="#" class="brand-logo"><span class="theAJ">A</span>ustin <span class="theT">T</span><span class="theAJ">J</span>ohnson</a>
-        <span id="ajquote">"A 21st Century American Hero"</span>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#one">Web Development</a></li>
-          <li><a href="#two">Music</a></li>
-          <li><a href="#three">Connect</a></li>
-        </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
+  <div id="topsect">
+
+    <div id="zero" class="textfly hidden navbar">
+      <nav id="navhead" role="navigation">
+        <div class="nav-wrapper">
+          <img id="navimg" src="images/ATJ_Head.jpg">
+          <a id="logo-container" href="#" class="brand-logo grey-text"><span class="theAJ black-text">A</span>ustin <span class="theT black-text">T</span><span class="theAJ black-text">J</span>ohnson</a>
+          <span id="ajquote">"A 21st Century Renaissance Man"</span>
+          <ul class="right hide-on-med-and-down">
+            <li class="bounce"><a href="#one">Web Development</a></li>
+            <li class="bounce"><a href="#two">Music</a></li>
+            <li class="bounce"><a href="#three">Connect</a></li>
+          </ul>
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="textfly1 hidden center">
+      <li id="mainA">A</li>
+      <li>U</li>
+      <li>S</li>
+      <li>T</li>
+      <li>I</li>
+      <li>N</li>
+      <li></li>
+      <li id="mainT">T</li>
+      <li></li>
+      <li id="mainJ">J</li>
+      <li>O</li>
+      <li>H</li>
+      <li>N</li>
+      <li>S</li>
+      <li>O</li>
+      <li>N</li>
+    </ul>
+    <ul class="textfly2 hidden center">
+      <li>Web Developer</li>
+      <li>Musician</li>
+    </ul>
+
   </div>
-  
 
   <div id="one" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -77,20 +103,199 @@
           </div>
         </div>
       </div>
-      <p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <hr>
+      <br>
+      <p class="about">I am a full-stack web developer currently seeking an opportunity for employment in this field.  I recently completed a six month, intensive, full stack coding bootcamp at the University of North Carolina Chapel Hill.  Prior to this course, I had a very basic knowledge of HTML, CSS, and JavaScript aquired from free, online resources including <a href="https://www.coursera.org/" target="_blank">Coursera</a>, <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a>, and <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>.  After completing this cource, I now have the skills to confidently call my self a Full-Stack Developer.  During my tenure at the UNC coding bootcamp, we covered a wide range of subjects including HTML, CSS, JavaScript, JQuery, API's, AJAX, JSON, Firebase, Node.js, mySql, Sequelize, Express, RESTful APIs, MongoDB, Mongoose, Scraping, Testing, TDD, React, C#, ASP.net, Algorighms, GIT,  and much more.  I have been able to use this knowledge combined with my other skills, interests and creativity to create some applications that I am proud to show off, especially considering I could barely write a basic HTML/CSS page when i began the UNC course in June 2017.  Please browse through my portfolio, and feel free to contact me with any questions or comments.</p>
+    </div>
+    <hr>
+    <div class="section">
+      <h3 id="porthead" class="center">Portfolio</h3>
+      <h6 class="center blue-text text-lighten-2">Click app for more info</h6>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col s12 m4">
+          <div data-target="modal1" class="portimg modal-trigger">
+            <img class="shake" src="images/OMF.png">
+          </div>
+          <h5 class="center">Old Milburnie Farm App</h5>
+          <p class="center grey-text">This Full-Stack application was specially build as a part of a two person team for a friend who owns an organic and was our final major project for the UNC coding bootcamp.</p>
 
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          <!-- Modal Content -->
+          <div id="modal1" style="width:90%;height:90%;" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <!-- <a href="#!" class="right demolinks modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a> -->
+              <h4 class="center">Old Milburnie Farm App</h4>
+              <h5 class="center">
+                <a class="demolinks" href="https://oldmilburnie.herokuapp.com/" target="_blank">Demo App</a>
+                <a class="demolinks" href="https://github.com/ATJohnson83/Old-Milburnie-Farm" target="_blank">Source Code</a>
+              </h5>
+              <br>
+              <p class="about">This appliction was created as two person team with my classmate, David Palmquist, for our final project at the UNC coding bootcamp.  The idea for this app was born through many discussions with my friend, Daniel Dayton, who is the owner of Old Milburnie Farm in Raleigh, NC.  Daniel has some basic web development knowledge and was always curious about what we were learning in the UNC course.  We also discussed ways that an app could be useful for his farm buisness.  Wanting the experience of having a real world client and application for my projects, I decided to turn our ideas into reality for the final project by creating a custom app for Old Milburnie Farm.  David and I worked on the first project together and we also had the same tutor, so we decided to team up for this app.  Please demo the app and send me feedback.  
+              <br>
+              <br>
+              <span class="underline-text">Demo Login Info:</span>
+              <br>
+              <span class="bold-text">User Names:</span>
+              <br>
+              -  Management-1
+              <br>
+              -  Employee-1
+              <br>
+              -  Customer-1
+              <br>
+              <span class="bold-text">Passwords:</span>
+              <br>
+              * All demo passwords are:  <span class="grybck">test</span>
+              <br>
+              <br>
+              <span class="underline-text">The app has six main functionalities:</span>
+              <br>
+              <span class="bold-text"> Users</span> - There are 3 categories of users: Management, Employee, Customer.  Management has the ability to create, edit, and delete users.  When you login you are directed to the main page of your type (management to the management main page, customer to the customer main page, etc.).
+              <br>
+              <span class="bold-text">Tasks</span> - Management can assign tasks to employees.  When an employee logs in, he/she can see the tasks that they are assigned, and can mark them as completed once they are done.  Management then has the ability to either delete the task, or to re-open it.
+              <br>
+              <span class="bold-text">Sales Inventory</span> - This feature allows the management to input the current inventory that is available to customers.  There are 5 categories of inventory: Chicken, Pork, Vegetable, Mushroom, and Other.  When a customer logs in, they can create an order from the available sales inventory, and the available sales inventory quantity is updated.
+              <br>
+              <span class="bold-text">Orders</span> - When a customer creates an order, it is available for the management to view, mark as paid, delivered, or closed.  Customers are also able to see their order history.  
+              <br>
+              <span class="bold-text">Employee Time</span> - This is a clock in/ clock out feature that allows employees to clock in/out from their page.  Management can then go and view the employee's time.  This was inspired by <a href="https://www.exaktime.com/" target="_blank">ExakTime</a>, a mobile app that allows employees to clock in/ out from their phones.  We used this app at my job (Whitman Masonry), and it was a tremendous improvement from the old key tab clock system.  
+              <br>
+              <span class="bold-text">Harvests</span> - This feature lets employees enter their harvests by entering the date, harvested item, field, bed and quantity.  Management can then go and track these harvests to add to the inventory, or use this to track historic harvest yields from different fields/ beds.   </p>
+              <br>
+              <br>
+              <h5 class="center bold-text">Technologoies Used</h5>
+              <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="images/logos/html5.png"></a>
+                <a class="carousel-item" href="#two!"><img src="images/logos/css3.png"></a>
+                <a class="carousel-item" href="#three!"><img src="images/logos/bootstrap-stack.png"></a>
+                <a class="carousel-item" href="#four!"><img src="images/logos/javascript_logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/jquery-logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/nodejs.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/mysql.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/sequelize logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/Heroku.png"></a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="demolinks modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div data-target="modal2" class="portimg modal-trigger">
+            <img class="shake" src="images/MasonryApp.png">
+          </div>
+          <h5 class="center">Whitman Masonry App</h5>
+          <p class="center grey-text">This Full-Stack application was custom built alone for my employer and as my second major project for the UNC coding bootcamp.</p>
 
+          <!-- Modal Content -->
+          <div id="modal2" style="width:90%;height:90%;" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <!-- <a href="#!" class="right demolinks modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a> -->
+              <h4 class="center">Whitman Masonry App</h4>
+              <h5 class="center">
+                <a class="demolinks" href="https://wmiappdemo.herokuapp.com/" target="_blank">Demo App</a>
+                <a class="demolinks" href="https://github.com/ATJohnson83/WMI_App_Demo" target="_blank">Source Code</a>
+              </h5>
+              <p class="about">This application was initally built to meet the requirements for the Second Major Project during my time as a Student at the UNC coding bootcamp. The idea behind this project originated as an attempt to create more efficiency and save time during my job at Whitman Masonry. I was assigned the task of researching and implementing an Incentive based pay system, in which employees were rewarded based directly on their work output instead of bonuses or raises. In order to do this, I had to get daily production reports from each of the foremen at every job which showed the amount of materials they installed/ the number and breakdown of their personel/ and the amount of hours they worked. After several unsuccesful attempts of getting this info, including text messages and printed out paper handouts, I decided to use my new coding skills to create an app that could potentially make this process much less painless and efficient.
 
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              The first screen is a login screen. The user can either sign in as a Manager or a Foreman. For demo purposes all passwords are set to "test" so you can log in a play with the app. If a foreman logs in, they are taken to a mobile responsive page that is intended to be viewed on an Iphone (all of our foremen had iphones). They then fill out the daily report and press submit. This would ideally be done at the end of everyday. The management can then log in and choose to view reports. There is an option to choose a date range for a specific job or to view all reports. Management can also add/ deactivate/ activate/ or delete users and jobs. </p>
+              <br>
+              <br>
+              <h5 class="center bold-text">Technologoies Used</h5>
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+              <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="images/logos/html5.png"></a>
+                <a class="carousel-item" href="#two!"><img src="images/logos/css3.png"></a>
+                <a class="carousel-item" href="#three!"><img src="images/logos/bootstrap-stack.png"></a>
+                <a class="carousel-item" href="#four!"><img src="images/logos/javascript_logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/jquery-logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/nodejs.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/mysql.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/sequelize logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/Heroku.png"></a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="demolinks modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div data-target="modal3" class="portimg modal-trigger">
+            <img class="shake" src="images/StockTimeMachineApp.png">
+          </div>
+          <h5 class="center">Stock Market Time Machine</h5>
+          <p class="center grey-text">This Front-End application was built as part of a three person team for our first major project during the UNC coding bootcamp.</p>
+          <!-- Modal Content -->
+          <div id="modal3" style="width:90%;height:90%;" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <!-- <a href="#!" class="right demolinks modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a> -->
+              <h4 class="center">Stock Market Time Machine</h4>
+              <h5 class="center">
+                <a class="demolinks" href="https://jamesaustindavid.github.io/Stock-Market-Time-Machine-web-app/index.html" target="_blank">Demo App</a>
+                <a class="demolinks" href="https://github.com/JamesAustinDavid/Stock-Market-Time-Machine-web-app" target="_blank">Source Code</a>
+              </h5>
+              <p class="about"> This app was built as part of a group with two of my worthy constituants, David Palmquist and James Mulling, from the UNC coding bootcamp as our first major project in august 2017. The initial idea of the project was this; What would have happened if we invested the money it takes to attend a bootcamp (approx. $10,000) in the dow jones index? And we planned to make it almost a game to see who could make the best investment. That idea morphed into its present idea; What if we had a time machine and could go back in time and invest this same amount of money in a porfolio of our choosing. We also decided to add another feature where the user could inform their investment using historic news articles from the NYT about the companies in their portfolio. The result is its present state.
 
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+              The user (pick Austin to test) can select a portfolio of any size from one stock up to the entire dow 30, and reference news articles about that company from the NYT over any time period available. He/She then picks a buying and selling date, and can see what the results of this investment would have been. This could be used by investors to study the market of the past, or as an education tool to show how current news can affect a stock value.</p>
+              <br>
+              <br>
+              <h5 class="center bold-text">Technologies Used</h5>
+              <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="images/logos/html5.png"></a>
+                <a class="carousel-item" href="#two!"><img src="images/logos/css3.png"></a>
+                <a class="carousel-item" href="#three!"><img src="images/logos/bootstrap-stack.png"></a>
+                <a class="carousel-item" href="#four!"><img src="images/logos/javascript_logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/jquery-logo.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/ajax.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/json.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/firebase.png"></a>
+                <a class="carousel-item" href="#five!"><img src="images/logos/api.png"></a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="demolinks modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <div data-target="modal4" class="portimg modal-trigger">
+            <img class="shake" src="images/ATJ_Website.png">
+          </div>
+          <h5 class="center">This Website</h5>
+          <p class="center grey-text">This Front-End Website was built solo to promote myself as a webdeveloper and musician.</p>
+          <!-- Modal Content -->
+          <div id="modal4" style="width:90%;height:90%;" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <!-- <a href="#!" class="right demolinks modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a> -->
+              <h4 class="center">Austin T Johnson Website</h4>
+              <p class="about">This website was a solo project with the purpose of creating a nice "about" single page application that showcases my web development and music efforts.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="demolinks modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col s12 m4">
+          <div class="portimg">
+            <img class="shake" src="">
+          </div>
+          <h5 class="center"></h5>
+          <p class="center grey-text"></p>
+        </div>
+        <div class="col s12 m4">
+          <div class="portimg">
+            <img class="shake" src="">
+          </div>
+          <h5 class="center"></h5>
+          <p class="center grey-text"></p>
+        </div> -->
+      </div>
     </div>
   </div>
 
@@ -116,7 +321,6 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
@@ -125,14 +329,12 @@ There are many variations of passages of Lorem Ipsum available, but the majority
             <h5 class="center">Performance</h5>
           </div>
         </div>
-
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">edit</i></h2>
             <h5 class="center">Composition</h5>
           </div>
         </div>
-
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">school</i></h2>
@@ -140,20 +342,10 @@ There are many variations of passages of Lorem Ipsum available, but the majority
           </div>
         </div>
       </div>
-       <p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+      <hr>
+       <p class="about">
+         My interest in music developed at a relatively young age, first through traditional piano lessons, and later through the experience of playing piano/keyboards in local bands and immersing myself in the recordings of players such as Bud Powell, Jimmy Smith, Herbie Hancock, Miles Davis, Bill Evans, Weather Report and many others.  I went on to earn batchelor and master degrees in music at Florida State University and University of New Orleans, and had to privelage to study with many great teachers including Marcus Roberts, Bill Peterson, Joey Calderazzo, Branford Marsalis, Dr. Robin Williams, John Ruggero, Victor Atkins, and Ellis Marsalis.  While at Florida State University, as the pianist in a trio consisting of two wonderful musicians, <a href="http://www.davepottermusic.com/" target="_blank">David Potter</a> and <a href="http://www.willgoble.com/" target="_blank">Will Goble</a>, also from North Carolina, I had the opportunity to meet and begin playing with drummer/vibrophonist, <a href="http://www.jasonmarsalis.com" target="_blank">Jason Marsalis</a>.  This group, the Jason Marsalis Vibes Quartet, went on to tour internationally for many years.  We recently recorded our 5th album as a band, and the group is still touring, supporting, and promoting the music.  During my many years as a musician living in New Orleans, I had the opportunity to perform, record, and study with many other great musicians including mi hermano <a href="http://alexeymarti.com/" target="_blank">Alexey Marti</a>, Roland Guerin, Phillip Manuel, Eilena Dennis, Brian Seeger, Ed Petersen, Simon Lott, Derek Douget, Rex Gregory, Peter Harris, Herlin Riley, Victor Goines, Bill Summers, Ricky Sebastion, Pedro Martinez, and others.  After years of struggling to make a descent living as a musician in New Orleans, I became interested in Web Development, and decided to move back to Raleigh, North Carolina which has developed a booming Tech Scene, in order to gain the knowledge and experience required to become a professional in this field.  Although I had to painfully put music on the backburner in order to become competent as a Web Developer in a relatively short period of time, my long term goal is to find a balance between these two careers and return to playing music professionally again, without the financial shackles that so many musicians find themselves in.
+       </p>
     </div>
   </div>
 
@@ -174,7 +366,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
         <br><br>
       </div>
     </div>
-    <div class="ajimg parallax"><img src="images/JMVQ_Seattle.jpg" alt="Unsplashed background img 3"></div>
+    <div id="ajjacket" class="ajimg parallax"><img src="images/AJ-WMJacket.jpg" alt="Austin wearing work jacket"></div>
   </div>
 
   <div class="container">
@@ -203,55 +395,32 @@ There are many variations of passages of Lorem Ipsum available, but the majority
           </div>
         </div>
       </div>
-       <p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-    </div>
-  </div>
-
-  <footer class="page-footer teal">
-    <div class="container">
+      <hr>
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+        <div class="col m4 center bold-text">
+          (919) 961-3852
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col m4 center">
+          <form method="POST" action="http://formspree.io/ATJohnson83@gmail.com">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+          </form>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col m4 center">
+          <a target ="_blank" href="https://github.com/ATJohnson83"><img class="contactimg" src="images/logos/github.gif"></a>
+          <a target ="_blank" href="https://www.linkedin.com/in/austin-johnson-a973212a/"><img class="contactimg" src="images/logos/linked.png"></a>
+          <a target ="_blank" href="https://stackoverflow.com/users/8107530/austintjohnson"><img class="contactimg" src="images/logos/stackedoverflow.png"></a>
+          <a target ="_blank" href="https://www.facebook.com/profile.php?id=5259251"><img class="contactimg" src="images/logos/facebook.png"></a>
         </div>
       </div>
     </div>
+  </div>
+
+  <footer class="page-footer white">
     <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <div class="container center grey-text">
+         &copy; Copyright 2017 Austin T. Johnson
       </div>
     </div>
   </footer>
