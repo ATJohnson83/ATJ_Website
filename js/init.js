@@ -38,8 +38,5 @@
 
   });
 
-  // $('#emailform').on('submit', function(){
-  // 	 $(this).val('');
-  // });
 
 }); // end of document ready
