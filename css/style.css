@@ -42,6 +42,10 @@ div:focus {
   list-style: none;
 }
 
+.namebreak{
+  display: none;
+}
+
 .mainAJ{
   font-size: 7em;
 }
@@ -173,6 +177,10 @@ div:focus {
   height: 10%;
 }
 
+button.btn.waves-effect.waves-light.blue {
+  margin-top: 10px;
+}
+
 
 #navimg{
   margin-left: 10px;
@@ -273,7 +281,69 @@ footer.page-footer {
 
 
 /*------Media Queries-------*/
- s
+ @media only screen and (max-width: 480px) {
+  
+  .namebreak{
+    display:block;
+  }
+
+  .nav-wrapper{
+    margin: 0px;
+  }
+
+  li#mainT{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  ul.textfly2.center{
+    margin-top: 50px;
+  }
+
+  i.material-icons{
+    color: black;
+    padding-top: 10px;
+  }
+
+  .col.m4.s12.center.bold-text{
+    font-size: 25px;
+  }
+
+  .col.m4.center{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+    font-size: 50px;
+  }
+
+  .side-nav li > a{
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  img#navimg{
+    float: right;
+  }
+
+  #logo-container{
+    display: none;
+  }
+
+  .textfly1 li{
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .textfly2 li{
+    font-size: 20px;
+    margin: 10px;
+  }
+
+ }
+
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
